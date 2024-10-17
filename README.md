@@ -43,10 +43,10 @@ Released under the [MIT license][11]
 [03]: https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2024-04
 [04]: _example
 [11]: LICENSE
-[12]: https://github.com/pilinux/linkedin/actions/workflows/codeql-analysis.yml/badge.svg
-[13]: https://github.com/pilinux/linkedin/actions/workflows/golangci-lint.yml/badge.svg
-[14]: https://pkg.go.dev/badge/github.com/pilinux/linkedin
-[15]: https://pkg.go.dev/github.com/pilinux/linkedin
-[16]: https://goreportcard.com/badge/github.com/pilinux/linkedin
-[17]: https://goreportcard.com/report/github.com/pilinux/linkedin
+[12]: https://github.com/xxiiaaon/linkedin/actions/workflows/codeql-analysis.yml/badge.svg
+[13]: https://github.com/xxiiaaon/linkedin/actions/workflows/golangci-lint.yml/badge.svg
+[14]: https://pkg.go.dev/badge/github.com/xxiiaaon/linkedin
+[15]: https://pkg.go.dev/github.com/xxiiaaon/linkedin
+[16]: https://goreportcard.com/badge/github.com/xxiiaaon/linkedin
+[17]: https://goreportcard.com/report/github.com/xxiiaaon/linkedin
 [18]: https://img.shields.io/badge/license-MIT-brightgreen.svg

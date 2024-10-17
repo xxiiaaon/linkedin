@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/pilinux/linkedin"
+	"github.com/xxiiaaon/linkedin"
 )
 
 // GlobalApp - LinkedIn application
