@@ -106,6 +106,30 @@ func (session *Session) Get(uri string) (response *http.Response, data []byte, e
 	return
 }
 
+// Get sends a GET request to LinkedIn API and returns the response.
+func (session *Session) GetNoProtocol(uri string) (response *http.Response, data []byte, err error) {
+	// uri must start with `/`
+	if !strings.HasPrefix(uri, "/") {
+		uri = "/" + uri
+	}
+	url := session.BaseURL + uri
+
+	// create a new HTTP request
+	request, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		err = fmt.Errorf("linkedIn: cannot create new request; %w", err)
+		return nil, nil, err
+	}
+
+	// set headers
+	request.Header.Set(string(ContentType), string(JSON))
+	request.Header.Set(string(LinkedInVersion), session.LinkedInVersion)
+
+	// send the request
+	response, data, err = session.sendRequest(request)
+	return
+}
+
 // sendAuthRequest sends an auth request to LinkedIn and returns new tokens.
 func (session *Session) sendAuthRequest(uri string, params Params) (Token, error) {
 	if params == nil {
